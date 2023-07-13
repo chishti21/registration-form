@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    {{>header}}
+    <h1>form page</h1>
+    <form action="/registration" method="POST">
+    <input type="text" name="FirstName" value="" placeholder="enter your first name"><br>
+     <input type="text" name="SecondName" value="" placeholder="enter your second name"><br>
+     <input type="email" name="Email" value="" placeholder="enter your email"><br>
+     <input type="password" name="Password" value=""><br>
+     <input type="password" name="ConfirmPassword" value=""><br>
+     <button type="submit" value="Register">submit</button>
+    </form>
+    {{>footer}}
+</body>
+</html>
